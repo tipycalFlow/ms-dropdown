@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+   background: #efefef;
+}
+.row {
+    margin-top: 100px;
+}
+.col {
+    width: 50%;
+    margin: auto;
+}
+.component-title {
+    font-size: 18px;
+    color: #333 !important;
+}
+h4 {
+    color: #686868;
+}

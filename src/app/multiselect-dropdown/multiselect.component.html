@@ -1,0 +1,29 @@
+<div class="ms-dropdown">
+    <div class="selected-list">
+        <button class="c-btn" (click)="toggleDropdown($event)">
+            <span *ngIf="selectedItems?.length == 0">{{displayText}}</span>
+            <div class="c-list" *ngIf="selectedItems?.length > 0">
+                <div class="c-token" *ngFor="let item of selectedItems;trackBy: trackByFn;let k = index">
+                    <span class="c-label">{{item.itemName}}</span>
+                </div>
+            </div>
+            <span class="fa" [ngClass]="{'fa-angle-down': !isExpanded,'fa-angle-up':isExpanded}"></span>
+        </button>      
+    </div>
+    <div class="dropdown-list" [hidden]="!isExpanded">
+        <div class="arrow-up"></div>
+        <div class="list-area">
+            <div class="list-filter">
+                <span class="fa fa-search"></span>
+                <input type="text" [placeholder]="searchPlaceholderText" [(ngModel)]="filter.itemName">
+            </div>
+        <ul>
+            <li *ngFor="let item of data | listFilter:filter; let i = index;" (click)="onItemClick(item,i)" class="ms-checkbox">
+                <input type="checkbox" [checked]="isSelected(item)"/>
+                <label>{{item.itemName}}</label>
+            </li>
+        </ul>
+        <h5 class="list-message" *ngIf="data.length == 0">No Data Available</h5>
+        </div>
+    </div>
+</div>

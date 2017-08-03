@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <h4>Select state</h4>
+        <ms-dropdown [data]="sampleList" [(ngModel)]="sampleSelectedItems" [displayText]="'Select'" [searchPlaceholderText]="'Type to search here'" (onSelect)="onItemSelect($event)" (onDeSelect)="OnItemDeSelect($event)"></ms-dropdown>
+    </div>
+    </div>
+</div>

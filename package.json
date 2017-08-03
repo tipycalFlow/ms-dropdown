@@ -1,0 +1,38 @@
+{
+  "name": "ms-dropdown",
+  "version": "1.2.0",
+  "license": "MIT",
+  "angular-cli": {},
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "lint": "ng lint"
+  },
+  "private": false,
+  "dependencies": {
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/forms": "^4.0.0",
+    "@angular/http": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/router": "^4.0.0",
+    "angular-cli": "^1.0.0-beta.28.3",
+    "bootstrap": "*",
+    "core-js": "^2.4.1",
+    "font-awesome": "*",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@angular/cli": "*",
+    "@angular/compiler-cli": "^4.0.0",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "~6.0.60",
+    "codelyzer": "~2.0.0",
+    "ts-node": "~2.0.0",
+    "tslint": "~4.5.0",
+    "typescript": "~2.2.0"
+  }
+}
